@@ -1,6 +1,6 @@
 public class ServiceStation {
 
-    public void print (interfaceTransportService print) {
+    public void print (InterfaceTransport print) {
 
     print.check();
 

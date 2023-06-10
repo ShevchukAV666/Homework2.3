@@ -1,4 +1,4 @@
-public class Bicycle extends transportService  {   ///велосипед
+public class Bicycle extends Transport  {   ///велосипед
 
     public Bicycle(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -9,7 +9,7 @@ public class Bicycle extends transportService  {   ///велосипед
         transportName();
 
             for (int i = 0; i < this.getWheelsCount(); i++) {
-                updateTyre();
+               updateTyre();
             }
             System.out.println();
         }

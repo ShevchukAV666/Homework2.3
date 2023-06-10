@@ -1,7 +1,12 @@
-public class Truck extends transportService {  // Грузовик
+public class Truck extends AutoTransport {  // Грузовик
 
     public Truck(String modelName, int wheelsCount) {
+
         super(modelName, wheelsCount);
+    }
+
+    public void checkTrailer() {
+        System.out.println("Проверяем прицеп");
     }
 
     public void check() {
@@ -9,9 +14,9 @@ public class Truck extends transportService {  // Грузовик
         transportName();
 
         for (int i = 0; i < this.getWheelsCount(); i++) {
-            updateTyre();
+           updateTyre();
         }
-        checkEngine();
+        super.checkEngine();
         checkTrailer();
         System.out.println();
 

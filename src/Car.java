@@ -1,10 +1,9 @@
-public class Car extends transportService {  //машина
+public class Car extends AutoTransport  {  //машина
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
 
     }
-
 
     public void check() {
 
@@ -13,7 +12,7 @@ public class Car extends transportService {  //машина
             for (int i = 0; i < this.getWheelsCount(); i++) {
                 updateTyre();
             }
-            checkEngine();
+            super.checkEngine();
             System.out.println();
         }
     }

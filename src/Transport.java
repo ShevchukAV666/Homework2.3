@@ -1,8 +1,8 @@
-public abstract class transportService implements interfaceTransportService {
+public abstract class Transport implements InterfaceTransport {
     public String modelName;
     public int wheelsCount;
 
-    public transportService(String modelName, int wheelsCount) {
+    public Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
@@ -21,14 +21,6 @@ public abstract class transportService implements interfaceTransportService {
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
     }
 
 }
